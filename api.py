@@ -1,10 +1,22 @@
-from flask import Flask, jsonify
+from distutils.command.upload import upload
+from flask import Flask, jsonify, request
+import json
 
+responce = ''
+# creating the instance of our flask application
 app = Flask(__name__)
+@app.route('/upload',method = ['GET', 'POST'])
+def uploadRoute():
+    global response
+    if(request.method == 'POST'):
+        request_data = request.data
+        request_data = json.loads(request_data.decode('utf-8'))
+        upload = request_data['upload']
+        responce = f'Upload: {upload}'
+        return " "
+    else:
+        return jsonify({'upload', response})
 
-@app.route('/users',methods = ['GET'])
-def index():
-    return jsonify({'greetings' : "Hi this is Oori"})
 
 if __name__ == "__main__":
-    app.run(debug = True) 
+    app.run(debug=True)
