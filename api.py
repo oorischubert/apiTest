@@ -1,8 +1,7 @@
-from distutils.command.upload import upload
 from flask import Flask, jsonify, request
 import json
 
-responce = ''
+response = ''
 # creating the instance of our flask application
 app = Flask(__name__)
 @app.route('/upload',method = ['GET', 'POST'])
