@@ -11,6 +11,7 @@ def uploadRoute():
         request_data = request.data
         request_data = json.loads(request_data.decode('utf-8'))
         response = request_data['post']
+        response = request_data['post']
         return " "
     else:
         return jsonify({'post': response})
