@@ -14,7 +14,7 @@ def uploadRoute():
         response = f'Post: {upload}'
         return " "
     else:
-        return jsonify({'post', response})
+        return jsonify({'post': response})
 
 
 if __name__ == "__main__":
