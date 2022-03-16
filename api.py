@@ -11,7 +11,7 @@ details = {
   "1026": {"name": "Bag", "details": "This is Ooris school bag!"},
   "6281": {"name": "Kindle", "details": "This is Ooris Kindle!"},
 }
-
+response = ' '
 # creating the instance of our flask application
 app = Flask(__name__)
 @app.route('/uid',methods = ['GET', 'POST'])
@@ -20,10 +20,12 @@ def uploadRoute():
     if(request.method == 'POST'):
         request_data = request.data
         request_data = json.loads(request_data.decode('utf-8'))
+        response = details[request_data["uid"]]
         return ' '
     else:
-        return jsonify({'uid' : details[request_data["uid"]]})
+        return jsonify({'uid' : response})
        
+
 
 if __name__ == "__main__":
     app.run(debug=True)
