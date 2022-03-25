@@ -1,10 +1,10 @@
 from flask import Flask, jsonify, request
 
 details = {
-  "8782": {"name": "Box", "details": "This is Ooris Box!"},
+  "046f43223d7080": {"name": "Box", "details": "This is Ooris Box!"},
   "8363": {"name": "Glasses", "details": "This is Ooris glasses case!"},
   "5435": {"name": "Speaker", "details": "This is Ooris speaker!"},
-  "8025": {"name": "Bottle", "details": "This is Ooris water bottle!"},
+  "046f49223d7080": {"name": "Bottle", "details": "This is Ooris water bottle!"},
   "9835": {"name": "IPad", "details": "This is Ooris IPad!"},
   "3718": {"name": "Drone", "details": "This is Ooris Drone!"},
   "1026": {"name": "Bag", "details": "This is Ooris school bag!"},
