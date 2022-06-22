@@ -2,7 +2,7 @@ import json
 from flask import Flask, jsonify, request
 
 FindMistakesData = [
-{'correct': 'You are not in Boston.', 'incorrect': 'You is not in boston.'},
+{'correct': 'Tom drinks coffee every day.', 'incorrect': 'tom drinking coffee every day.'},
 {'correct': 'I love reading books.', 'incorrect': 'I love read books.'},
 {'correct': 'I am very tired.', 'incorrect': 'I is very tired.'},
 ]
