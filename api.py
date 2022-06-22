@@ -9,7 +9,7 @@ FindMistakesData = [
 
 VerbData = [
 {'sentence': 'She ____ them.', 'answer' : 'likes', 'words' : ['likes', 'like', 'liked']},
-{'sentence': 'It ____ tall.', 'answer' : 'is', 'words' : ['has', 'were', 'is']},
+{'sentence': 'It ____ tall.', 'answer' : 'is', 'words' : ['has', 'were', 'is', 'they']},
 {'sentence': 'who ____ it?', 'answer' : 'ate', 'words' : ['eat', 'ate', 'eating']},
 ]
 
